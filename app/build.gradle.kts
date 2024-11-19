@@ -32,7 +32,7 @@ android {
 }
 
 dependencies {
-
+    // Bibliotecas padrão
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -40,4 +40,8 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    // Room Database
+    implementation((libs.room.runtime))
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
 }
