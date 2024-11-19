@@ -60,7 +60,7 @@
 
         <!-- Botão "Cadastrar perguntas e respostas" -->
         <Button
-            android:id="@+id/saveButton"
+            android:id="@+id/createQuestionsButton"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:text="Cadastrar perguntas e respostas"

@@ -7,7 +7,7 @@ import androidx.room.Query;
 import java.util.List;
 
 @Dao
-public interface MyDao {
+public abstract interface MyDao {
     @Insert
     long insertQuestion(Questions questions);
 

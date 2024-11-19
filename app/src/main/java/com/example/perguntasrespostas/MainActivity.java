@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        PlayFragment fragment = new PlayFragment ();
+        PlayFragment fragment = new PlayFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
