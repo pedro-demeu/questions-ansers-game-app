@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayFragment">
+
+    <!-- Área do texto da pergunta -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Pergunta"
+        android:gravity="center"
+        android:background="#A5D6A7"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Área do texto da resposta -->
+    <TextView
+        android:id="@+id/answerText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Resposta"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:background="#E0E0E0"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Organização dos botões -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <!-- Botões "Exibir Resposta" e "Pular" -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/showAnswerBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Exibir Resposta"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/nextBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:text="Pular"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <!-- Botão "Cadastrar perguntas e respostas" -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Cadastrar perguntas e respostas"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</FrameLayout>
