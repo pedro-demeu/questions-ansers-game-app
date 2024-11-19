@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     tools:context=".FormFragment">
 
-     <TextView
+       <TextView
         android:id="@+id/questionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,6 +54,7 @@
             android:textSize="18sp" />
 
         <Button
+            android:id="@+id/playBtn"
             android:layout_width="0dp"
             android:layout_height="70dp"
             android:layout_weight="1"
